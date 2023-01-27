@@ -15,6 +15,7 @@ describe('Google Webpage',()=>{
                 cy.get('.CCgQ5 > span').click()
             } else {
               console.log("No element on the page.........");
+              console.log("HI.........");
             }
           });
         
