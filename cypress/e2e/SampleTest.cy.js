@@ -4,7 +4,7 @@ import * as data from "./Mydata.json"
 describe('Google Webpage',()=>{
     it('Searching for Keyword',()=>{
         cy.visit('https://www.google.com/');
-        cy.get('.gLFyf').type(data.data[0].email)
+        cy.get('.gLFyf').type(data.data[0].email+currentdateTime())
         cy.get('.gLFyf').clear()
         cy.get('.gLFyf').type(obj.searchbardata).type('{enter}')
        
@@ -21,4 +21,9 @@ describe('Google Webpage',()=>{
         
     
     })
+
+     function currentdateTime(){
+      const d = new Date();
+      return d;
+    }
 })
