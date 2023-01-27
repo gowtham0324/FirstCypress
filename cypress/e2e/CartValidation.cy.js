@@ -15,7 +15,7 @@ describe("E-Commerce Web Testing", () => {
         cy.get(":nth-child(2) > .product-thumb > .caption > h4 > a").scrollIntoView().should("be.visible");
         cy.get(":nth-child(2) > .product-thumb > .caption > h4 > a").should("be.visible").click();
         cy.get("#button-cart").click();
-        cy.wait(600);
+        cy.wait(6400);
         cy.get('#button-cart').click();
       } else {
         console.log("No element on the page.........");
