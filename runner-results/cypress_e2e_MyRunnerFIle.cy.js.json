@@ -1,0 +1,10 @@
+{
+  "suites": 1,
+  "tests": 4,
+  "passes": 4,
+  "pending": 0,
+  "failures": 0,
+  "start": "2023-01-27T11:48:14.645Z",
+  "duration": 67065,
+  "file": "cypress\\e2e\\MyRunnerFIle.cy.js"
+}
