@@ -10,7 +10,7 @@ describe('Google Webpage',()=>{
        
         cy.get("body").then((body) => {
             if (body.find('#vplaurlt0 > .pymv4e').length > 0 ) {
-                cy.wait(2000)
+                cy.wait(5000)
                 cy.reload()
                 cy.get('.CCgQ5 > span').click()
             } else {
