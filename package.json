@@ -3,19 +3,21 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run --headed",
-    "debug":"npx cypress open",
-    "cy:parallel":"cypress-parallel -d cypress/e2e/ -t 2 -s test"
+    "test": "cypress open",
+    "debug": "npx cypress open",
+    "cy:parallel": "cypress-parallel -d cypress/e2e/ -t 2 -s test"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
     "cypress": "^12.3.0",
-    "cypress-parallel": "^0.12.0"
+    "cypress-parallel": "^0.12.0",
+    "jsonpath": "^1.1.1"
   },
   "devDependencies": {
     "cypress-file-upload": "^5.0.8",
-    "cypress-mochawesome-reporter": "^3.2.3"
+    "cypress-mochawesome-reporter": "^3.2.3",
+    "node-xlsx": "^0.21.0"
   }
 }

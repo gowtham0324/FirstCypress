@@ -12,10 +12,13 @@ module.exports = defineConfig({
   e2e: {
     setupNodeEvents(on, config) {
       require("cypress-mochawesome-reporter/plugin")(on);
+      // on("task", {
+      //   'readXlsx': readXlsx.read
+      // });
     },
+
     env: {
       baseurl: "https://naveenautomationlabs.com/opencart/",
-     
     },
   },
 });
